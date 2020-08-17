@@ -9,7 +9,7 @@ window.alert("mensagem de exemplo");
 /*Mostra apenas no console
 console.log("Aparece so no console")*/
 
-/*Declaração de variáveis*/
+/*Declaração de variáveis
 var nome = 'coelho';
 var idade = 90;
 alert(nome);
@@ -17,4 +17,14 @@ alert(nome);
 var x = 10;
 var y = 15;
 var total = x + y;
-alert(total);
+alert(total);*/
+
+/*CONDICIONAIS*/
+var hora = 15;
+if( hora < 12 ) {
+    console.log("Bom dia");
+} else if (hora < 18 ) {
+    console.log("Boa tarde");
+} else if( hora <= 23) {
+    console.log("Boa Noite");
+};
