@@ -17,7 +17,12 @@ alert(nome);
 var x = 10;
 var y = 15;
 var total = x + y;
-alert(total);*/
+alert(total);
+
+var - escopo global, pode ser acessada em qualquer lugar
+let - só fica disponível em uma área específica do código
+const - constante, não permite alteração
+*/
 
 /*CONDICIONAIS*/
 var hora = 15;
