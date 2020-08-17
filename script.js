@@ -22,9 +22,9 @@ alert(total);
 var - escopo global, pode ser acessada em qualquer lugar
 let - só fica disponível em uma área específica do código
 const - constante, não permite alteração
-*/
 
-/*CONDICIONAIS*/
+
+/*CONDICIONAIS
 var hora = 15;
 if( hora < 12 ) {
     console.log("Bom dia");
@@ -33,3 +33,11 @@ if( hora < 12 ) {
 } else if( hora <= 23) {
     console.log("Boa Noite");
 };
+
+document.getElementById("titulo").innerHTML = "Ola Mundo";
+*/
+var titulo = document.getElementById("titulo");
+titulo.innerHTML = "Segundo titulo";
+
+var campo = document.getElementById("campo");
+campo.value = "Coelho";
