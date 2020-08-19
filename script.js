@@ -45,7 +45,7 @@ var campo = document.getElementById("campo");
 campo.value = "Coelho";
 
 
-Funções*/
+Funções
 
 function alterar(titulo) {
     document.getElementById("titulo").innerHTML = titulo;
@@ -62,4 +62,9 @@ function somar(x, y) {
 };
 
 var resultado = somar(10, 15);
-console.log(resultado);
+console.log(resultado);*/
+
+function clicou() {
+    alert("Voce clicou no botão");
+    document.getElementById("titulo").innerHTML = "Obrigado";
+}
