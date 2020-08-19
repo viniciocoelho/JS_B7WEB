@@ -34,10 +34,32 @@ if( hora < 12 ) {
     console.log("Boa Noite");
 };
 
+Alterando o DOM
+
 document.getElementById("titulo").innerHTML = "Ola Mundo";
-*/
+
 var titulo = document.getElementById("titulo");
 titulo.innerHTML = "Segundo titulo";
 
 var campo = document.getElementById("campo");
 campo.value = "Coelho";
+
+
+Funções*/
+
+function alterar(titulo) {
+    document.getElementById("titulo").innerHTML = titulo;
+    document.getElementById("campo").value = titulo;
+};
+
+//Dá execução a função
+alterar('Texto alterado');
+
+function somar(x, y) {
+    let total = x + y;
+    return total;
+    //document.getElementById("campo").value = total;
+};
+
+var resultado = somar(10, 15);
+console.log(resultado);
