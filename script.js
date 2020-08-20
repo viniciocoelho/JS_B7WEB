@@ -67,7 +67,7 @@ console.log(resultado);
 function clicou() {
     alert("Voce clicou no botão");
     document.getElementById("titulo").innerHTML = "Obrigado";
-}*/
+}
 
 function digitou(evento) {
     if(evento.keyCode == 13) {
@@ -77,3 +77,34 @@ function digitou(evento) {
     
 }
 //cada tecla tem um keycode associado ao evento de teclado definido
+*/
+
+function azul() {
+    limpar();
+
+    document.getElementById("titulo").classList.add('azul');
+}
+
+function vermelho() {
+    limpar();
+
+    document.getElementById("titulo").classList.add('vermelho');
+}
+
+function verde() {
+    limpar();
+
+    document.getElementById("titulo").classList.add('verde');
+}
+
+function limpar(){
+    document.getElementById("titulo").classList.remove("azul");
+    document.getElementById("titulo").classList.remove("vermelho");
+    document.getElementById("titulo").classList.remove("verde");
+}
+
+function mostrarTelefone(elemento){
+    elemento.style.display = 'none';
+    document.getElementById("telefone").style.display = "block";
+
+}

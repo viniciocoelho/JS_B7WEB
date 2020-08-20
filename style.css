@@ -1,8 +1,27 @@
 body {
-    background-color: grey;
+    background-color: #EEEEEE;
 }
-#campo {
-    padding: 20px;
-    font-size: 20px;
-    font-weight: bold;
+
+input[tyoe=text] {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.azul {
+    background-color: #0000FF;
+    color: #FFF;
+}
+
+.vermelho {
+    background-color: #FF0000;
+    color: #FFF;
+}
+
+.verde {
+    background-color: #00FF00;
+    color: #000;
+}
+
+#telefone {
+    display: none;
 }

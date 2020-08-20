@@ -7,12 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="titulo" 
-    onmouseover="console.log('passou o mouse')"
-    onmouseout="console.log('tirou o mouse')"
-    >Seja bem vindo</h1>
+    <h1 id="titulo" >
+        Seja bem vindo
+    </h1>
     
-    <input onkeydown="digitou(event)" type="text" name="usuario" id="campo" value="NOME DO USUARIO">
+    <div id="telefone">
+        999999999999
+    </div>
+
+    <button onclick="mostrarTelefone(this)">Mostrar telefone</button>
+
+
+    <!--
+    <button onclick="azul()">Azul</button>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="verde()">Verde</button>
+    -->
+    <!--<input onkeydown="digitou(event)" type="text" name="usuario" id="campo" value="NOME DO USUARIO">-->
 
     <!--<button onclick="this.innerHTML='clicou'">Clique em mim</button>-->
     
