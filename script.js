@@ -62,9 +62,18 @@ function somar(x, y) {
 };
 
 var resultado = somar(10, 15);
-console.log(resultado);*/
+console.log(resultado);
 
 function clicou() {
     alert("Voce clicou no botão");
     document.getElementById("titulo").innerHTML = "Obrigado";
+}*/
+
+function digitou(evento) {
+    if(evento.keyCode == 13) {
+        let texto = document.getElementById("campo").value;
+        console.log(texto);
+    }
+    
 }
+//cada tecla tem um keycode associado ao evento de teclado definido
