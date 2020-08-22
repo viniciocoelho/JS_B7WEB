@@ -77,7 +77,7 @@ function digitou(evento) {
     
 }
 //cada tecla tem um keycode associado ao evento de teclado definido
-*/
+
 
 function azul() {
     limpar();
@@ -108,3 +108,16 @@ function mostrarTelefone(elemento){
     document.getElementById("telefone").style.display = "block";
 
 }
+
+
+DECLARAÇÃO DE ARRAYS
+*/
+
+let carro = ['palio', 'uno', 'corola', 'ferrari',
+function() {
+    console.log("teste 1 2 3");
+}];
+console.log(carro)
+console.log(carro[0])
+console.log(carro[3])
+carro[4] () // executa a função armazenada na 4 posição
