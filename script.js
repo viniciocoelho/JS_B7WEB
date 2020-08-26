@@ -111,7 +111,7 @@ function mostrarTelefone(elemento){
 
 
 DECLARAÇÃO DE ARRAYS
-*/
+ARRAY É UMA LISTAGEM NUMERADA.
 
 let carro = ['palio', 'uno', 'corola', 'ferrari',
 function() {
@@ -121,3 +121,52 @@ console.log(carro)
 console.log(carro[0])
 console.log(carro[3])
 carro[4] () // executa a função armazenada na 4 posição
+
+
+DECLARAÇÃO DE OBJETOS
+OBJETO É UMA LISTAGEM NOMEADA
+
+let carros = [
+    'palio',
+    'uno',
+    'corolla'
+];
+console.log(carros[0]);
+
+let carro = {
+    nome: 'fiat',
+    modelo: 'uno',
+    peso: '800kg',
+    ligado:false,
+    ligar: function() {
+        this.ligado = true;
+        console.log("Ligando o "+this.modelo);
+        console.log("vrum vrum");
+    },
+    acelerar:function() {
+        if(this.ligado== true){
+            console.log("riiiiiiii");
+        } else {
+            console.log(this.nome+" "+this.modelo+" não está ligado!");
+        }
+    }
+};
+console.log(carro['nome']);
+console.log(carro.nome);
+carro.ligar();
+carro.acelerar();
+
+DECLARANDO OBJETOS DENTRO DE ARRAYS
+
+let carros = [
+    {nome:'fiat', modelo:'palio'},
+    {nome:'fiat', modelo:'uno'},
+    {nome:'ferrari', modelo:'spider'},
+    {nome: 'corolla', modelo:'toyota'}
+];
+console.log(carros[2]['nome']);
+console.log(carros[2].nome);
+*/
+
+
+
