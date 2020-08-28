@@ -1,27 +1,73 @@
 body {
-    background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
-
-input[tyoe=text] {
-    padding: 10px;
-    font-size: 14px;
+/*
+input[tyoe="text"] {
+  padding: 10px;
+  font-size: 14px;
 }
 
 .azul {
-    background-color: #0000FF;
-    color: #FFF;
+  background-color: #0000ff;
+  color: #fff;
 }
 
 .vermelho {
-    background-color: #FF0000;
-    color: #FFF;
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .verde {
-    background-color: #00FF00;
-    color: #000;
+  background-color: #00ff00;
+  color: #000;
 }
 
 #telefone {
-    display: none;
+  display: none;
+}
+*/
+
+aside {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  background-color: gray;
+}
+
+.menu-opener {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.menu-area {
+  width: 200px;
+  height: 100vh;
+  background-color: #ccc;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease 0.5s;
+  align-items: flex-start;
+}
+
+.menu-area ul,
+.menu-area li {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-area li {
+  display: block;
+  padding: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.menu-area li:hover {
+  background-color: #ddd;
 }
