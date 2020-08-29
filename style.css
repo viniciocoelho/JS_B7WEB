@@ -32,9 +32,8 @@ aside {
   height: 100vh;
   top: 0;
   right: 0;
-
+  z-index: 999;
   display: flex;
-  background-color: gray;
 }
 
 .menu-opener {
@@ -45,29 +44,34 @@ aside {
   margin-right: 10px;
 }
 
-.menu-area {
-  width: 200px;
+#menu-area {
+  width: 0px;
   height: 100vh;
   background-color: #ccc;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all ease 0.5s;
-  align-items: flex-start;
 }
 
-.menu-area ul,
-.menu-area li {
+#menu-area ul,
+#menu-area li {
   padding: 0;
   list-style: none;
 }
 
-.menu-area li {
+#menu-area li {
   display: block;
   padding: 10px;
   color: #555;
   cursor: pointer;
 }
 
-.menu-area li:hover {
+#menu-area li:hover {
   background-color: #ddd;
 }
+
+/*
+Usado com a função que altera a classe
+.menu-opened {
+  width: 200px !important;
+}*/
