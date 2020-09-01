@@ -28,7 +28,7 @@ for (let i in carros) {
 hmtl = html + "</ul>";
 
 document.getElementById("demo").innerHTML = html;
-*/
+
 
 let html = "";
 let c = 0;
@@ -43,3 +43,8 @@ for (let c = 1; c <= 10; c++) {
 }
 
 document.getElementById("demo").innerHTML = html;
+
+document.querySelector('ol.lista') -> seleciona o item com a classe q eu declarar 
+
+document.querySelectorAll(".lista"); -> gera um array com os elementos
+*/
